@@ -1,0 +1,45 @@
+@use "base/variables" as v;
+@use "base/colours" as c;
+@use "base/mixins" as m;
+
+.background-top {
+  background: url("../img/bg-section-top-mobile-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 25vh;
+  @include m.tablet {
+    background: url("../img/bg-section-top-desktop-1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+.background-bottom {
+  background: url("../img/bg-section-bottom-mobile-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 25vh;
+  @include m.tablet {
+    background: url("../img/bg-section-bottom-desktop-1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
+
+.background-top-dark {
+  background: url("../img/bg-footer-top-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 25vh;
+  @include m.tablet {
+    background: url("../img/bg-footer-top-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}

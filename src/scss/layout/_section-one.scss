@@ -1,0 +1,35 @@
+@use "base/variables" as v;
+@use "base/colours" as c;
+@use "base/mixins" as m;
+
+.section-one__container {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include m.tablet{
+        height: 80vh;
+    }
+    .section-one__title {
+        width: 95%;
+        margin: 0 auto 2rem;
+        line-height: 3.5rem;
+        color: c.$main-title;
+        text-transform: capitalize;
+    }
+    .section-one__text {
+        width: 85%;
+        margin: 0 auto 4rem;
+        font-weight: v.$semi-bold;
+        line-height: 2rem;
+        @include m.tablet{
+            width: 60%;
+        }
+    }
+    .button--pink:hover{
+        background-color: c.$button-hover;
+    }
+}
+  

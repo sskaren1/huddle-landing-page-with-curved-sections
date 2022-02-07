@@ -1,0 +1,42 @@
+@use "base/variables" as v;
+@use "base/colours" as c;
+@use "base/mixins" as m;
+
+.section-three{
+    @include m.tablet{
+        margin-top: 3rem;
+    }
+}
+.section-three__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    @include m.tablet{
+        flex-direction: row;
+    }
+}
+.section-three__item{
+    width: 12rem;
+    margin-bottom: 3rem;
+    @include m.tablet{
+        margin-bottom: 0;
+    }
+    img{
+        width: 2rem;
+        margin:0 0 1rem;
+        text-align: left;
+    }
+    .numbers {
+        margin-bottom: 1rem;
+        color: c.$color-4;
+        font-size: 5rem;
+    }
+    .text-secondary {
+        font-size: 1.2rem;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+}

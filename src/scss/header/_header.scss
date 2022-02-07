@@ -1,0 +1,17 @@
+@use "base/variables" as v;
+@use "base/colours" as c;
+@use "base/mixins" as m;
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+}
+.nav__logo{
+    margin-right: 5rem;
+}
+.button--free {
+    text-transform: capitalize;
+}
+  

@@ -1,0 +1,101 @@
+@use "base/variables" as v;
+@use "base/colours" as c;
+@use "base/mixins" as m;
+
+.footer {
+  background-color: c.$footer-background;
+  padding: 0 0 2rem;
+  @include m.tablet {
+    padding: 3rem 0 2rem;
+  }
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: initial;
+  justify-content: space-evenly;
+  @include m.tablet {
+    flex-direction: row;
+  }
+}
+.info {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto 2rem;
+  @include m.tablet {
+    width: 100%;
+    margin: 0;
+  }
+  .info__logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 1rem;
+    width: 50%;
+    img{
+      margin: 0;
+    }
+  }
+  .info__text {
+    color: c.$neutral-2;
+    margin-bottom: 1rem;
+    @include m.tablet {
+      width: 90%;
+    }
+  }
+  .info__phone, .info__email{
+    display: flex;
+    justify-content: lef;
+    margin-bottom: 1rem;
+    span{
+      color: c.$neutral-2;
+    }
+    img{
+      margin: 0 2rem 0 0;
+    }
+  }
+}
+.newsletter {
+  width: 70%;
+  margin: 0 auto 3rem;
+  @include m.tablet {
+    width: 100%;
+    margin: 0;
+  }
+  .newsletter__title {
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .newsletter__title , .newsletter__text{
+    color: c.$neutral-2;
+    margin-bottom: 1rem;
+  }
+  .newsletter__input {
+    padding: 0.1rem;
+    border: none;
+    border-radius: 0.4rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+    @include m.tablet {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer__attribution {
+  display: flex;
+  justify-content: center;
+  p {
+    color: c.$neutral-2;
+    text-align: center;
+    a {
+      color: c.$link;
+      font-size: 1.2rem;
+      &:hover {
+        color: c.$link-hover;
+      }
+    }
+  }
+}

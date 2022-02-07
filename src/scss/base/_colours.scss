@@ -1,0 +1,35 @@
+//Colours
+// color palette - SCSS RGB
+// Primary
+$color-1: rgba(255, 82, 191, 1);
+$color-2: rgba(255, 143, 216, 1);
+$color-3: rgba(255, 66, 66, 1);
+$color-4: rgba(0, 37, 46, 1);
+$color-5: rgba(245, 250, 255, 1);
+// Neutral
+$neutral-1: rgba(0 , 0, 0, 1);
+$neutral-2: rgba(255 , 255, 255, 1);
+$neutral-3: rgba(128, 128, 128, 1);
+
+$main-title: $color-4;
+$secondary-title: $neutral-1;
+$paragraph: $neutral-1;
+//border
+$border: $color-1;
+//link
+$link: $color-2;
+//icon
+$icon: $neutral-2;
+//hover
+$link-hover: $color-1;
+$button-hover: $color-2;
+$border-hover: $color-2;
+// background
+$footer-background:$color-4;
+$shadow:rgba(0, 0, 0, 0.6);
+$box-shadow: rgba(0, 0, 0, 0.16);
+//button
+$button-send: $color-3;
+$button-view: $color-3;
+$button-background: rgba(29, 11, 26, 0.8);
+$button-pink: $color-1;

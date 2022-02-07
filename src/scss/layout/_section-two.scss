@@ -1,0 +1,16 @@
+@use "base/variables" as v;
+@use "base/colours" as c;
+@use "base/mixins" as m;
+
+.section-two {
+    height: 60vh;
+    background-image: url(../img/screen-mockups.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @include m.tablet{
+        height: 70vh;
+    }
+}
+
+  

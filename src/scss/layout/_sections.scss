@@ -1,0 +1,58 @@
+@use "base/variables" as v;
+@use "base/colours" as c;
+@use "base/mixins" as m;
+
+.section--dark{
+    background-color: c.$color-5;  
+}
+.section{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    .section__container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        @include m.tablet{
+            flex-direction: row;
+        }
+    }
+}
+.section__description{
+    @include m.tablet{
+        margin-right: 7rem;
+    }
+    .section__title{
+        margin-bottom: 2rem;
+        text-transform: capitalize;
+        text-align: center;
+        @include m.tablet{
+            text-align: left;
+        }
+    }    
+    .section__text{
+        text-align: center;
+        margin: 0 auto;
+        @include m.tablet{
+            text-align: left;
+        }
+    }  
+}
+.section__img{
+    img{
+        width: 20rem;
+        @include m.tablet{
+            width: 100%;
+        }
+    }
+}
+.section--light{
+    .section__description{
+        @include m.tablet{
+            margin-right: 0;
+            margin-left: 5rem;
+        }
+    }
+}
+   

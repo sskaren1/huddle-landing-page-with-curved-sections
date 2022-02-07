@@ -1,0 +1,93 @@
+@use 'variables' as v;
+@use 'colours' as c;
+@use 'mixins' as m;
+
+html{
+    font-size: 62.5%;/* 1 rem = 10px */
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;//para que al crear una caja al poner un width tbn se considere su padding y margin como parte de este
+}
+*,*:before, *:after{
+    box-sizing: inherit;/*inherit:hereda del elemento padre*/
+    margin:0;
+    padding: 0;
+}
+[class$="__container"] {
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+    @include m.macbook_air{
+        max-width: 1900px;;
+    }
+    @include m.macbook_pro_13{
+        max-width: 2800px;
+    }
+}
+img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.button{
+    padding: 0.5rem 1.5rem;
+    border:none;
+    border-radius: 1rem;   
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    @include m.telefono{
+        padding: 0.6rem 1.6rem;
+    }
+    @include m.tablet{
+        padding: 0.8rem 2rem;
+        margin: 0;
+    }                     
+}
+.button--free {
+    border: 0.1rem solid c.$border;
+    border-radius: 1.6rem;
+    color: c.$border;
+    &:hover{
+        border: 0.1rem solid c.$border-hover;
+    }
+}
+.button--icon{
+    display: inline-block;
+    background-color: transparent;
+}
+.button--view{
+    display: inline-block;
+    background-color: c.$button-view;
+}
+.button--session{
+    background-color: c.$button-background;
+}
+.button--pink {
+    padding: 2rem 8rem;
+    background-color: c.$button-pink;
+    border-radius: 5rem;
+    box-shadow: 1rem 0.4rem 0.5rem 0 c.$box-shadow;
+    -webkit-box-shadow: 1rem 0.4rem 0.5rem 0 c.$box-shadow;
+    -moz-box-shadow: 1rem 0.4rem 0.5rem 0 c.$box-shadow;
+    color: c.$neutral-2;
+    font-size: 1.4rem;
+    font-weight: v.$bold;
+    text-transform: capitalize;
+}
+.shadow-background{
+    background-color: c.$shadow;  
+}
+
+.button--footer {
+    background-color: hsl(322, 100%, 66%);
+    padding: 1rem 3rem;
+    color: c.$neutral-2;
+    border-radius: 0.4rem;
+    border: none;
+    font-weight: v.$medium;
+  }

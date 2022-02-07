@@ -1,0 +1,148 @@
+@use 'variables' as v;
+@use 'colours' as c;
+@use 'mixins' as m;
+
+body{
+    font-family:v.$secondary-font;
+    font-weight: v.$regular;
+}
+h1, h2, h3 {
+    font-family: v.$main-font;
+    font-weight: v.$black;
+    text-align: center;    
+    color: c.$secondary-title;
+}
+h1 {
+    color: c.$main-title;
+    font-size: 2.4rem;
+    @include m.jio_phone{
+        font-size: 2.6rem;
+    }
+    @include m.telefono{
+        font-size: 2.8rem;
+    }
+    @include m.tablet{
+        font-size: 3rem;
+    }
+    @include m.desktop{
+        font-size: 3.2rem;
+    }
+}
+h2 {
+    font-size: 2.2rem;
+    @include m.jio_phone{
+        font-size: 2.4rem;
+    }
+    @include m.telefono{
+        font-size: 2.6rem;
+    }
+    @include m.tablet{
+        font-size: 2.8rem;
+    }
+    @include m.desktop{
+        font-size: 3rem;
+    }
+}
+h3 {
+    font-size: 2rem;
+    @include m.jio_phone{
+        font-size: 2.2rem;
+    }
+    @include m.telefono{
+        font-size: 2.4rem;
+    }
+    @include m.tablet{
+        font-size: 2.6rem;
+    }
+    @include m.desktop{
+        font-size: 2.5rem;
+    }
+}
+p, span {
+    font-family: v.$secondary-font;
+    font-weight: v.$regular;
+    line-height: 1.6rem;
+    color: c.$paragraph;
+    font-size: 1rem;
+    @include m.jio_phone{
+        font-size: 1rem;
+    }
+    @include m.telefono{
+        font-size: 1.1rem;
+    }
+    @include m.tablet{
+        font-size: 1.2rem;
+    }
+    @include m.macbook_air{
+        font-size: 1.4rem;
+    }
+}
+a {
+    font-family: v.$main-font;
+    font-weight: v.$bold; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: c.$link;    
+    transition-property: color;
+    transition-duration: .5s;
+    &:hover {
+        color: c.$link-hover;
+        cursor: pointer;
+    } 
+    @include m.jio_phone{
+        font-size: 1.2rem;
+    }
+    @include m.telefono{
+        font-size: 1.4rem;
+    }
+    @include m.tablet{
+        font-size: 1.6rem;
+    }
+    @include m.macbook_air{
+        font-size: 1.8rem;
+    }
+}
+i{
+    text-decoration: none;
+    color: c.$icon;
+    transition-property: color;
+    transition-duration: .5s;
+    font-size: 1.4rem;
+    &:hover{
+        color: c.$link-hover;
+        cursor: pointer;
+    }
+    @include m.jio_phone{
+        font-size: 1.6rem;
+    }
+    @include m.telefono{
+        font-size: 1.8rem;
+    }
+    @include m.tablet{
+        font-size: 2rem;
+    }
+    @include m.macbook_air{
+        font-size: 2.2rem;
+    }
+}
+ul {
+    list-style: none;
+}
+li{
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 2.5rem;
+    @include m.jio_phone{
+        font-size: 1.2rem;
+    }
+    @include m.telefono{
+        font-size: 1.4rem;
+    }
+    @include m.tablet{
+        font-size: 1.6rem;
+    }
+    @include m.desktop{
+        font-size: 1.8rem;
+    }
+}
