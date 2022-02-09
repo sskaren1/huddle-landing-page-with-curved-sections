@@ -56,17 +56,6 @@ img {
         border: 0.1rem solid c.$border-hover;
     }
 }
-.button--icon{
-    display: inline-block;
-    background-color: transparent;
-}
-.button--view{
-    display: inline-block;
-    background-color: c.$button-view;
-}
-.button--session{
-    background-color: c.$button-background;
-}
 .button--pink {
     padding: 2rem 8rem;
     background-color: c.$button-pink;
@@ -79,10 +68,6 @@ img {
     font-weight: v.$bold;
     text-transform: capitalize;
 }
-.shadow-background{
-    background-color: c.$shadow;  
-}
-
 .button--footer {
     background-color: hsl(322, 100%, 66%);
     padding: 1rem 3rem;

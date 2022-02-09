@@ -1,4 +1,4 @@
-# Frontend Mentor - Stats preview card component solution
+# Frontend Mentor - Huddle landing page with curved sections
 ## Welcome! 👋
 
 This is a solution to the [Huddle landing page with curved sections challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -32,8 +32,8 @@ Add a screenshot of my solution.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/sskaren1/stats-preview-card-component.git)
-- Live Site URL: [Add live site URL here](https://sk1-stats-preview-card.netlify.app)
+- Solution URL: [Add solution URL here](https://github.com/sskaren1/huddle-landing-page-with-curved-sections.git)
+- Live Site URL: [Add live site URL here](https://sk1-huddle-landing-page.netlify.app/)
 
 ## My process
 

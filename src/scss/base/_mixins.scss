@@ -52,35 +52,4 @@
     align-items: center;//para centrar verticalmente
     justify-items: center;//para centrar horizontalmente
 }
-@mixin grid-col-row($columns,$rows,$spacing) {
-    display:grid;
-    gap: $spacing;
-    grid-template-columns: repeat($columns, 1fr);
-    grid-template-rows: repeat($rows, 1fr);
-    align-items: center;//para centrar verticalmente
-    justify-items: center;//para centrar horizontalmente
-}
-@mixin grid-col-row-2-var($column1,$column2,$row1,$row2,$spacing) {
-    display:grid;
-    gap: $spacing;
-    grid-template-columns: $column1 $column2;
-    grid-template-rows: $row1 $row2;
-    align-items: center;//para centrar verticalmente
-    justify-items: center;//para centrar horizontalmente
-}
-@mixin grid-col-var($colum1,$colum2,$spacing) {
-    grid-template-rows: unset;
-    display:grid;
-    grid-template-columns: $colum1 $colum2;
-    column-gap: $spacing;
-    align-items: center;//para centrar verticalmente
-    justify-items: center;//para centrar horizontalmente
-}
-@mixin grid-row-var($row1,$row2,$spacing) {
-    grid-template-columns: unset;
-    display:grid;
-    grid-template-rows: $row1 $row2;
-    row-gap: $spacing;
-    align-items: center;//para centrar verticalmente
-    justify-items: center;//para centrar horizontalmente
-}
+
